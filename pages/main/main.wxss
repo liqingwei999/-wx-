@@ -1,0 +1,80 @@
+Page {
+  background-color: #f7f7f7;
+}
+.user-info-wrap {
+  height: 36vh;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+.user-info-wrap .user-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+.user-info-wrap .user-info .user-icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user-info-wrap .user-info .user-name {
+  color: black;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+.showCard {
+  display: flex;
+  padding: 20rpx 30rpx;
+  background-color: white;
+  border-top: 1px solid #f0eaea;
+}
+.showCard ul {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.showCard ul li:last-child {
+  font-size: 22rpx;
+  color: #ccc;
+}
+.order-wraps {
+  margin: 20rpx 0;
+}
+.order-wraps li {
+  padding: 0 25rpx;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.order-wraps li view {
+  margin-left: 30rpx;
+}
+.order-wraps li .jiantou {
+  position: absolute;
+  right: 25rpx;
+}
+.rec {
+  padding: 0 25rpx;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.rec view {
+  margin-left: 30rpx;
+}
+.rec .jiantou {
+  position: absolute;
+  right: 25rpx;
+}

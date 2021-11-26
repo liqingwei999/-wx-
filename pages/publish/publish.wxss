@@ -1,0 +1,28 @@
+Page {
+  position: relative;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+.field {
+  width: 100vw;
+  height: 35vh;
+  overflow: scroll;
+}
+.desc {
+  background-color: #ccc;
+  width: 100vw;
+}
+.upload {
+  position: fixed;
+  bottom: 120rpx;
+}
+.sub-bar {
+  bottom: 0;
+  width: 100vw;
+  position: absolute;
+}
+.sub-bar button {
+  right: 100rpx;
+  height: 100%;
+  width: 100vw;
+}

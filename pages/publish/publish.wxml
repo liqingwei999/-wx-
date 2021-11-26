@@ -1,0 +1,46 @@
+<!--pages/publish/publish.wxml-->
+<view class="field">
+  <van-cell-group>
+  <van-field
+    class="desc"
+    model:value="{{ desc }}"
+    type="textarea"
+    maxlength='300'
+    placeholder="请对物品添加描述，300字符以内"
+    border
+    autosize
+    show-word-limit
+    adjust-position
+  />
+</van-cell-group>
+</view>
+  
+<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
+
+
+<van-uploader 
+class="upload"
+accept="image"
+max-count="3"
+file-list="{{ fileList  }}" 
+deletable='true'
+disabled='true'
+preview-size='150rpx'
+>
+<image class="" 
+bindtap="choseImg" 
+style='width:150rpx;height:150rpx;' 
+src="../../image/icon/tianjia.svg" 
+mode="aspectFit|aspectFill|widthFix" 
+lazy-load="false" binderror="" bindload="" />
+</van-uploader>
+
+<view class="sub-bar">
+  <van-submit-bar
+  button-text="发布"
+  bind:submit="onSubmit"
+  />
+
+</view>
+  
+

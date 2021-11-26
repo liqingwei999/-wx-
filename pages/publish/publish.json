@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index"
+  },
+  "navigationBarBackgroundColor": "#63DCD3",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "纸飞机发布"
+}

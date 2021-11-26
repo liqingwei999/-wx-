@@ -1,0 +1,14 @@
+<!-- pages/detail/detail.wxml -->
+<view class="detail common-style">
+  <view class="userInfo clearfix">
+    <view class="nick-img">
+      <image class="img" src="{{goodInfo.imgUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="nickname">{{goodInfo.userNick}}</view>
+  </view>
+  <view class="desc">
+    <view>{{goodInfo.desc}}454545454545454646546456</view>
+    <image class="" src="{{goodInfo.imgUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+  </view>
+  
+</view>

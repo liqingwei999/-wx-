@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Card" : "/components/card/card",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
+  },
+  "navigationBarBackgroundColor": "#63DCD3",
+  "navigationBarTextStyle": "white"
+  
+}

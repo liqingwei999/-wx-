@@ -1,0 +1,45 @@
+//小圆点样式
+// .status-point {
+//   background-color: var(--themecolor);
+//   display: inline-block;
+//   width: 16rpx;
+//   height: 16rpx;
+//   border-radius: 50%;
+//   margin-right: 15rpx;
+// }
+
+.container {
+  display: flex;
+  padding: 30rpx;
+  margin: 20rpx 15rpx 15rpx 15rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+  box-shadow: 0 4rpx 8rpx 0 rgba(0, 0, 0, 0.1), 0 6rpx 15rpx 0 rgba(0, 0, 0, 0.15);
+  
+  .userInfo {
+    flex: 2;
+    p::before {
+      content: "";
+      background-color: var(--themecolor);
+      display: inline-block;
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 50%;
+      margin-right: 15rpx;
+    }
+  }
+
+  .img {
+    flex: 1;
+    overflow: hidden;
+    width: 200rpx;
+    // height: 200rpx;
+    background-color: #ddd;
+    image{
+      width: 100%;
+      // height: 100%;
+    }
+  }
+
+
+}

@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="notice-bar">
+    <van-notice-bar 
+    scrollable color="orange !important" 
+    background="rgb(255,251,232) !important" 
+    text="技术是开发它的人的共同灵魂。" />
+  </view>
+  <swiper autoplay circular>
+    <swiper-item wx:for="{{swipers}}" wx:key="_id" mode="widthFix">
+      <image src='{{item.image}}' mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  <text class="card-titlte" selectable="false" space="false" decode="false">
+   探寻记录~
+  </text>
+  
+  <Card wx:for="{{cardInfo}}" wx:key="id" cardInfo='{{item}}'
+  bindtap="navToDetail" data-cardinfo="{{item}}"
+  ></Card>
+  
+</view>

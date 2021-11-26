@@ -1,0 +1,55 @@
+<view class="user-info-wrap">
+  <view class="user-info">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">登录</button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录</button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="user-icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="user-name">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="showCard">
+  <ul class="1">
+    <li>3</li>
+    <li>我买到的</li>
+  </ul>
+  <ul class="2">
+    <li>12</li>
+    <li>我卖出的</li>
+  </ul>
+  <ul class="3">
+    <li>45.00</li>
+    <li>赚入</li>
+  </ul>
+</view>
+<view class="order-wraps">
+  <ul>
+    <li>
+      <iconfont name="dengji"></iconfont>
+      <view class="iconfont icon-liuyanzhi">我的有闲</view>
+      <iconfont class='jiantou' name="jiantou_liebiaoxiangyou"></iconfont>
+    </li>
+    <li>
+      <iconfont name="zhifeiji"></iconfont>
+      <view>我的纸飞机</view>
+      <iconfont class='jiantou' name="jiantou_liebiaoxiangyou"></iconfont>
+    </li>
+    <li>
+      <iconfont name="shoucang1"></iconfont>
+      <view>我的收藏</view>
+      <iconfont class='jiantou' name="jiantou_liebiaoxiangyou"></iconfont>
+    </li>
+    <li>
+      <iconfont name="liuyanzhi"></iconfont>
+      <view>我的留言</view>
+      <iconfont class='jiantou' name="jiantou_liebiaoxiangyou"></iconfont>
+    </li>
+  </ul>
+</view>
+<navigator class="rec" target="" url="" hover-class="navigator-hover" open-type="navigate">
+  <iconfont name="zhuanfa"></iconfont>
+  <view>推荐给朋友</view>
+  <iconfont class='jiantou' name="jiantou_liebiaoxiangyou"></iconfont>
+</navigator>

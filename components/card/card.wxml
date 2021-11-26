@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="userInfo">
+    <view>{{cardInfo.userNick}}：</view>
+    <view>{{cardInfo.desc}}</view>
+  </view>
+  <view class="img">
+    <image src="{{cardInfo.img}}" mode="widthFix" lazy-load="true">
+    </image>
+  </view>
+  
+  
+</view>

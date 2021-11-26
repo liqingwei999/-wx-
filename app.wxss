@@ -1,0 +1,34 @@
+/**app.wxss**/
+@import 'miniprogram_npm/@vant/weapp/common/index.wxss';
+
+Page,view,text,swiper,swiper-item,image,navigator{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Page {
+  --themecolor: #63DCD3;
+  font-size: 32rpx;
+} 
+
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* 公共样式 */
+.common-style {
+  margin: 0 15rpx;
+}
+/*伪元素是行内元素 正常浏览器清除浮动方法*/
+.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+

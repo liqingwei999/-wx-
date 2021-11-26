@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/main/main",
+    "pages/publish/publish"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "附近有闲",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/nav/nav0.png",
+        "selectedIconPath": "image/nav/nav1.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "image/nav/nav0.png",
+        "selectedIconPath": "image/nav/nav1.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "image/nav/user0.png",
+        "selectedIconPath": "image/nav/user1.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "iconfont": "/iconfont/iconfont"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
