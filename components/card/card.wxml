@@ -1,10 +1,14 @@
 <view class="container">
   <view class="userInfo">
-    <view>{{cardInfo.userNick}}：</view>
-    <view>{{cardInfo.desc}}</view>
+    <view class="avatar" hover-class="none" hover-stop-propagation="false">
+      <image  src="{{cardInfo.avatarUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+    </image>
+    </view>
+    <view class="nick-name">{{cardInfo.nickName}}</view>
+    <view class="desc">{{cardInfo.desc}}</view>
   </view>
-  <view class="img">
-    <image src="{{cardInfo.img}}" mode="widthFix" lazy-load="true">
+  <view class="img" wx:if='{{cardInfo.imgUrl.length!=0}}'>
+    <image src="{{cardInfo.imgUrl[0].url}}" mode="widthFix" lazy-load="true">
     </image>
   </view>
   

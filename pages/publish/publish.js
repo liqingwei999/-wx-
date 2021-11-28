@@ -46,7 +46,7 @@ Page({
   //提交回调函数
   onSubmit(options) {
     // console.log(this.data.fileList);
-    if (!this.data.fileList) {
+    if (this.data.desc!='') {
       // 云函数添加记录
       wx.cloud.callFunction({
         name: 'insertImg',
@@ -67,8 +67,6 @@ Page({
           mask: true,
 
         });
-
-
       })
     }
     else {

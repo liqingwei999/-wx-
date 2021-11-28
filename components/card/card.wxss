@@ -1,4 +1,5 @@
 .container {
+  min-height: 200rpx;
   display: flex;
   padding: 30rpx;
   margin: 20rpx 15rpx 15rpx 15rpx;
@@ -8,8 +9,23 @@
 }
 .container .userInfo {
   flex: 2;
+  height: 85rpx;
 }
-.container .userInfo p::before {
+.container .userInfo .avatar {
+  float: left;
+  overflow: hidden;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+.container .userInfo .avatar image {
+  width: 100%;
+}
+.container .userInfo .nick-name {
+  line-height: 75rpx;
+}
+.container .userInfo .desc::before {
   content: "";
   background-color: var(--themecolor);
   display: inline-block;
@@ -18,12 +34,17 @@
   border-radius: 50%;
   margin-right: 15rpx;
 }
+.container .userInfo .desc {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .container .img {
   flex: 1;
-  overflow: hidden;
-  width: 200rpx;
-  background-color: #ddd;
+  width: 100%;
 }
 .container .img image {
+  vertical-align: bottom;
   width: 100%;
 }

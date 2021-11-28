@@ -15,8 +15,6 @@
 </van-cell-group>
 </view>
   
-<van-uploader file-list="{{ fileList }}" deletable="{{ true }}" />
-
 
 <van-uploader 
 class="upload"

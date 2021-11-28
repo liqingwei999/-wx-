@@ -14,7 +14,7 @@
    探寻记录~
   </text>
   
-  <Card wx:for="{{cardInfo}}" wx:key="id" cardInfo='{{item}}'
+  <Card wx:for="{{cardInfo}}" wx:key="_id" cardInfo='{{item}}'
   bindtap="navToDetail" data-cardinfo="{{item}}"
   ></Card>
   

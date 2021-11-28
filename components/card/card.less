@@ -9,16 +9,36 @@
 // }
 
 .container {
+  min-height: 200rpx;
   display: flex;
   padding: 30rpx;
   margin: 20rpx 15rpx 15rpx 15rpx;
   border-radius: 15rpx;
   background-color: #fff;
   box-shadow: 0 4rpx 8rpx 0 rgba(0, 0, 0, 0.1), 0 6rpx 15rpx 0 rgba(0, 0, 0, 0.15);
-  
+
   .userInfo {
     flex: 2;
-    p::before {
+    height: 85rpx;
+
+    .avatar {
+      float: left;
+      overflow: hidden;
+      width: 70rpx;
+      height: 70rpx;
+      border-radius: 50%;
+      margin-right: 15rpx;
+
+      image {
+        width: 100%;
+      }
+    }
+
+    .nick-name {
+      line-height: 75rpx;
+    }
+
+    .desc::before {
       content: "";
       background-color: var(--themecolor);
       display: inline-block;
@@ -27,17 +47,22 @@
       border-radius: 50%;
       margin-right: 15rpx;
     }
+    .desc{
+      display: -webkit-box;
+      overflow: hidden;  
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
   }
 
   .img {
     flex: 1;
-    overflow: hidden;
-    width: 200rpx;
-    // height: 200rpx;
-    background-color: #ddd;
-    image{
+    width: 100%;
+    // background-color: #ddd;
+
+    image {
+      vertical-align: bottom;
       width: 100%;
-      // height: 100%;
     }
   }
 

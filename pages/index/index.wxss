@@ -7,10 +7,12 @@ page swiper {
   padding: 15rpx;
   background-color: var(--themecolor);
 }
+
 page swiper image {
   width: 100%;
   border-radius: 20rpx;
 }
+
 page .card-titlte {
   display: inline-block;
   margin-left: 15rpx;
